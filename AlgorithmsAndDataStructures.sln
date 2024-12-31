@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_RecursionExample", "_01_RecursionExample\_01_RecursionExample.csproj", "{FAC78A3C-3E6B-4C29-BF2D-299F338DFA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_LinearSearch", "_01_LinearSearch\_01_LinearSearch.csproj", "{C4D88E77-0E2D-4F47-B597-8C20DAA75CF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01Recursion", "01Recursion", "{45F62108-F614-4431-8225-E00F90742223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02SearchingAlgorithms", "02SearchingAlgorithms", "{CDF9173C-F5DC-4045-A113-5CADB1BE740F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC78A3C-3E6B-4C29-BF2D-299F338DFA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC78A3C-3E6B-4C29-BF2D-299F338DFA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC78A3C-3E6B-4C29-BF2D-299F338DFA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC78A3C-3E6B-4C29-BF2D-299F338DFA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D88E77-0E2D-4F47-B597-8C20DAA75CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D88E77-0E2D-4F47-B597-8C20DAA75CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D88E77-0E2D-4F47-B597-8C20DAA75CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D88E77-0E2D-4F47-B597-8C20DAA75CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAC78A3C-3E6B-4C29-BF2D-299F338DFA4A} = {45F62108-F614-4431-8225-E00F90742223}
+		{C4D88E77-0E2D-4F47-B597-8C20DAA75CF4} = {CDF9173C-F5DC-4045-A113-5CADB1BE740F}
+	EndGlobalSection
+EndGlobal
