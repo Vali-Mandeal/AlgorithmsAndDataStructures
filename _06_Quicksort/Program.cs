@@ -4,21 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] arr = {5, 3, 8, 4, 2, 7, 1, 9, 10};
-        QuickSortRecursive(arr, 0, arr.Length - 1);
+        int[] arr = { 5, 3, 8, 4, 2, 7, 1, 9, 10 };
+        QuickSort(arr, 0, arr.Length - 1);
         
         Console.WriteLine(string.Join(" ", arr));
-        
     }
 
-    static void QuickSortRecursive(int[] array, int left, int right)
+    private static void QuickSort(int[] arr, int left, int right)
     {
         if (left < right)
         {
-            int pivotIndex = HoaroesPartition(array, left, right);
+            int pivot = HearoesPartition(arr, left, right);
             
-            QuickSortRecursive(array, left, pivotIndex - 1);
-            QuickSortRecursive(array, pivotIndex + 1, right);
+            QuickSort(arr, left, pivot - 1);
+            QuickSort(arr, pivot + 1, right);
         }
     }
 
@@ -31,28 +30,24 @@ class Program
     /// <param name="left"></param>
     /// <param name="right"></param>
     /// <returns></returns>
-    private static int HoaroesPartition(int[] array, int left, int right)
+    private static int HearoesPartition(int[] arr, int left, int right)
     {
-        int pivot = array[left];
+        int pivot = arr[left];
         int i = left - 1;
         int j = right + 1;
-
+        
         while (true)
         {
-            do // find the next element greater than the pivot from left to right
-            {
-                i++;
-            } while (array[i] < pivot);
+            do i++;// find the next element smaller than the pivot from left to right
+            while (arr[i] < pivot);
 
-            do // find the next element greater than the pivot from right to left
-            {
-                j--;
-            } while (array[j] > pivot);
-
+            do j--;// find the next element greater than the pivot from right to left
+            while (arr[j] > pivot);
+        
             if (i >= j)
                 return j; // if i and j crosses, it means pivot is in it's sorted position, so no swapping required
             
-            Swap(array, i, j);
+            Swap(arr, i, j);
         }
     }
     
@@ -67,7 +62,7 @@ class Program
     {
         int pivot = array[right];
         int i = left - 1;
-
+    
         for (int j = left; j < right; j++)
         {
             if (array[j] <= pivot)
@@ -76,11 +71,11 @@ class Program
                 Swap(array, i, j);
             }
         }
-
+    
         Swap(array, i + 1, right);
         return i + 1;
     }
-
+    
     /// <summary>
     /// Here we create copy of the array.
     /// First put all smaller elements and then all greater.
@@ -96,27 +91,27 @@ class Program
         int pivot = array[right];
         int[] temp = new int[right - left + 1];
         int idx = 0;
-
+    
         // First fill elements smaller than or equal to pivot
         for (int i = left; i <= right; i++)
         {
             if (array[i] <= pivot)
                 temp[idx++] = array[i];
         }
-
+    
         // Now fill the elements greater than pivot
         for (int i = left; i <= right; i++)
         {
             if (array[i] > pivot)
                 temp[idx++] = array[i];
         }
-
+    
         // Copy the elements from temp to array
         for (int i = 0; i < temp.Length; i++)
         {
             array[left + i] = temp[i];
         }
-
+    
         // Return the pivot index
         return left + idx - 1;
     }
