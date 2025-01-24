@@ -1,0 +1,14 @@
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/bin/Debug/net9.0/_01RecursionExample
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/bin/Debug/net9.0/_01RecursionExample.deps.json
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/bin/Debug/net9.0/_01RecursionExample.runtimeconfig.json
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/bin/Debug/net9.0/_01RecursionExample.dll
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/bin/Debug/net9.0/_01RecursionExample.pdb
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.GeneratedMSBuildEditorConfig.editorconfig
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.AssemblyInfoInputs.cache
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.AssemblyInfo.cs
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.csproj.CoreCompileInputs.cache
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.dll
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/refint/_01RecursionExample.dll
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.pdb
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/_01RecursionExample.genruntimeconfig.cache
+/Users/valimandeal/Programming/courses/AlgorithmsAndDataStructures/_01RecursionExample/obj/Debug/net9.0/ref/_01RecursionExample.dll

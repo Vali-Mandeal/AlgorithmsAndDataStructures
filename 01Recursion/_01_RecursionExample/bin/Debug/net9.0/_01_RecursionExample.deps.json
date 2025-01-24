@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "_01_RecursionExample/1.0.0": {
+        "runtime": {
+          "_01_RecursionExample.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "_01_RecursionExample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

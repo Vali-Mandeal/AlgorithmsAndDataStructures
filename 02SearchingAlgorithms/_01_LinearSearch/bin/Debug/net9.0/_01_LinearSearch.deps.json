@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "_01_LinearSearch/1.0.0": {
+        "runtime": {
+          "_01_LinearSearch.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "_01_LinearSearch/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
