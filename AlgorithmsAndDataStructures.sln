@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_BinarySearch", "02Searc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_DoublyLinkedList", "06DoublyLinkedList\_01_DoublyLinkedList\_01_DoublyLinkedList.csproj", "{65953EC5-8BDA-439E-911F-548E111C4FA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_Stacks", "07Stacks\_01_Stacks\_01_Stacks.csproj", "{FB006A9F-A9FD-4639-AEA7-0B68212B78DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,10 @@ Global
 		{65953EC5-8BDA-439E-911F-548E111C4FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65953EC5-8BDA-439E-911F-548E111C4FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65953EC5-8BDA-439E-911F-548E111C4FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB006A9F-A9FD-4639-AEA7-0B68212B78DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB006A9F-A9FD-4639-AEA7-0B68212B78DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB006A9F-A9FD-4639-AEA7-0B68212B78DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB006A9F-A9FD-4639-AEA7-0B68212B78DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
