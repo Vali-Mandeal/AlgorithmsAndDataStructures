@@ -12,6 +12,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.csproj.user
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -482,3 +483,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Rider IDE files
+*.rider.project.mode.nuget.info
+*.rider.project.restore.info
+*.AssemblyInfoInputs.Cache
