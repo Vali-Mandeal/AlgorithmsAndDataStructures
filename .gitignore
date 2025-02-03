@@ -488,3 +488,7 @@ $RECYCLE.BIN/
 *.rider.project.mode.nuget.info
 *.rider.project.restore.info
 *.AssemblyInfoInputs.Cache
+
+# Auto-generated AssemblyInfo files
+*AssemblyInfo.cs
+
