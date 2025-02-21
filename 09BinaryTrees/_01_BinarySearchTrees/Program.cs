@@ -21,49 +21,20 @@ public partial class BinaryTree
     private partial Node InsertRecursive(Node? node, int value);
     public partial void InsertIterative(int value);
 
-    // Search
+    // Searches
     public partial bool RecursiveSearch(int value, Node? node);
     public partial bool IterativeSearch(int value);
 
     // Traversals
+    public partial int GetNodeCount(Node? node);
+    public partial int GetHeight(Node? node);
     public partial void PrintPreOrder(Node? node);
     public partial void PrintInOrder(Node? node);
     public partial void PrintPostOrder(Node? node);
     public partial void PrintLevelOrder(Node? node);
 
-    public void Delete(int value)
-    {
-        Delete(value, Root);
-    }
-
-    private Node? Delete(int value, Node? root)
-    {
-        if (root == null)
-            return root;
-
-        if (value < root.Value)
-            root.Left = Delete(value, root.Left);  // Assign back to root.Left
-        else if (value > root.Value)
-            root.Right = Delete(value, root.Right);  // Assign back to root.Right
-        else // found the node
-        {
-            if (root.Left is null)
-                return root.Right;
-
-            if (root.Right is null)
-                return root.Left;
-            
-            // find the max from the left subtree
-            var current = root.Left;
-            while (current.Right is not null)
-                current = current.Right;
-
-            root.Value = current.Value;
-            root.Left = Delete(current.Value, root.Left);
-        }
-
-        return root;
-    }
+    // Deletions
+    public partial void Delete(int value);
 }
 
 
@@ -79,9 +50,10 @@ class Program
         //     / \   / \
         //    3   7 12 18
      
-        
-        bt.Delete(5);
-        bt.PrintLevelOrder(bt.Root);  
+
+        bt.PrintLevelOrder(bt.Root);
+
+        Console.WriteLine(bt.GetHeight(bt.Root));
     }
 
     private static BinaryTree InitializeTestBinarySearchTree()

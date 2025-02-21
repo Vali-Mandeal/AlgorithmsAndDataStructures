@@ -83,4 +83,29 @@ public partial class BinaryTree
                 queue.Enqueue(current.Right);
         }
     }
+    
+    public partial int GetNodeCount(Node? node)
+    {
+        if (node is null) 
+            return 0;
+        
+        var x = GetNodeCount(node.Left);
+        var y = GetNodeCount(node.Right);
+
+        return x + y + 1; // 1 is the root node
+    }
+
+    public partial int GetHeight(Node? node)
+    {
+        if (node is null)
+            return 0;
+
+        var x = GetHeight(node.Left);
+        var y = GetHeight(node.Right);
+
+        if (x > y)
+            return x + 1;
+        else
+            return y + 1;
+    }
 }
