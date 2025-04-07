@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_Queues", "08Queues\_01_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BinarySearchTrees", "09BinaryTrees\_01_BinarySearchTrees\_01_BinarySearchTrees.csproj", "{10EE4520-2BE6-4382-8AD8-5AAA08CC4AE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_Heaps", "10Heaps\_01_Heaps\_01_Heaps.csproj", "{4762DDB8-01B2-475F-99B6-0E4FC2472E78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +116,10 @@ Global
 		{10EE4520-2BE6-4382-8AD8-5AAA08CC4AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10EE4520-2BE6-4382-8AD8-5AAA08CC4AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10EE4520-2BE6-4382-8AD8-5AAA08CC4AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
