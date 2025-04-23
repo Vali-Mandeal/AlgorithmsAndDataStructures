@@ -1,4 +1,4 @@
-namespace _01_Hashing;
+namespace _01_Hashing.HashMaps;
 /// <summary>
 /// This implementation will not solve any collisions.
 /// It will just override the values when these occur.

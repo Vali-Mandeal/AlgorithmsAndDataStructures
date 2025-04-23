@@ -1,5 +1,10 @@
-namespace _01_Hashing;
+namespace _01_Hashing.HashMaps;
 
+/// <summary>
+/// This hashmap will help solve collisions in O(n) time
+/// If a collision occurs, the index will be probed until the next empty position will be found
+/// This happens on all methods, Add, Delete, Contains
+/// </summary>
 public class HashMapWithLinearProbing
 {
     private string[] _keys;
@@ -25,7 +30,7 @@ public class HashMapWithLinearProbing
 
     public void Remove(string key)
     {
-        var index = GetLinearProbedIndexForRemoval(key);
+        var index = GetLinearProbedIndexForDeletion(key);
         
         if (index == -1)
             throw new Exception("Key not found.");
@@ -44,34 +49,39 @@ public class HashMapWithLinearProbing
         return _values[index];
     }
     
+    /// <summary>
+    /// When adding we need to find the first null or empty position
+    /// We're also ok if the item itself is found, in this case we override it
+    /// </summary>
     private int GetLinearProbedIndexForAdding(string key)
     {
         return ProbeForIndex(key, 
-            index => _keys[index] == key || string.IsNullOrEmpty(_keys[index]), false);
+            index => _keys[index] == key || string.IsNullOrEmpty(_keys[index]));
     }
     
-    private int GetLinearProbedIndexForRemoval(string key)
+    /// <summary>
+    /// For deletion we need an exact match of the item
+    /// </summary>
+    private int GetLinearProbedIndexForDeletion(string key)
     {
-        return ProbeForIndex(key, 
-            index => _keys[index] == key, true);
+        return ProbeForIndex(key,index => _keys[index] == key);
     }
     
+    /// <summary>
+    /// For get we need an exact match of the item
+    /// </summary>
     private int GetLinearProbedIndexForGet(string key)
     {
-        return ProbeForIndex(key, 
-            index => _keys[index] == key, false);
+        return ProbeForIndex(key, index => _keys[index] == key);
     }
 
-    private int ProbeForIndex(string key, Func<int, bool> matchCondition, bool breakOnEmpty)
+    private int ProbeForIndex(string key, Func<int, bool> matchCondition)
     {
         int initialIndex = GetIndex(key);
         int index = initialIndex;
 
         do
         {
-            if (breakOnEmpty && string.IsNullOrEmpty(_keys[index]))
-                break;
-
             if (matchCondition(index))
                 return index;
 
@@ -84,11 +94,11 @@ public class HashMapWithLinearProbing
 
     private int GetIndex(string item)
     {
-        int x = 0;
+        int hash = 0;
 
         foreach (char c in item)
-            x += c;
+            hash += c;
 
-        return x % _size;
+        return hash % _size;
     }
 }

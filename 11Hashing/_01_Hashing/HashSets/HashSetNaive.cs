@@ -1,4 +1,4 @@
-namespace _01_Hashing;
+namespace _01_Hashing.HashSets;
 /// <summary>
 /// This implementation will not solve any collisions.
 /// It will just override the values when these occur.
@@ -38,11 +38,11 @@ public class HashSetNaive // keys only
 
     private int GetIndex(string item)
     {
-        int x = 0;
+        int hash = 0;
 
         foreach (char c in item)
-            x += c;
+            hash += c;
 
-        return x % _size;
+        return hash % _size;
     }
 }
