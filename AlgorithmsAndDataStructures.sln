@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_BinarySearchTrees", "09
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_Heaps", "10Heaps\_01_Heaps\_01_Heaps.csproj", "{4762DDB8-01B2-475F-99B6-0E4FC2472E78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01_Hashing", "11Hashing\_01_Hashing\_01_Hashing.csproj", "{143AA466-C938-4A1E-B78F-CE74C76EF4DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,6 +122,10 @@ Global
 		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4762DDB8-01B2-475F-99B6-0E4FC2472E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143AA466-C938-4A1E-B78F-CE74C76EF4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143AA466-C938-4A1E-B78F-CE74C76EF4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143AA466-C938-4A1E-B78F-CE74C76EF4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143AA466-C938-4A1E-B78F-CE74C76EF4DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
