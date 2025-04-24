@@ -1,4 +1,6 @@
-﻿namespace _01_Hashing;
+﻿using _01_Hashing.HashMaps;
+
+namespace _01_Hashing;
 
 class Program
 {
@@ -26,5 +28,12 @@ class Program
         // Console.WriteLine(hashMapWithLinearProbing.Get("t1est"));
         // Console.WriteLine(hashMapWithLinearProbing.Get("te1st"));
         // Console.WriteLine(hashMapWithLinearProbing.Get("tes1t"));
+
+        var hashMapWithChaining = new HashMapWithChaining();
+        
+        hashMapWithChaining.Add("test1", "this is test 1");
+        hashMapWithChaining.Add("test2", "this is test 2");
+        hashMapWithChaining.Add("test3", "this is test 3");
+        hashMapWithChaining.Add("test4", "this is test 4");
     }
 }
